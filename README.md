@@ -1,9 +1,51 @@
-# Dealership
-Backoffice Dealership
+# Dealership Management System
 
-Projeto .NET e SQL
-Uma rede de concessionárias deseja criar um sistema para gerenciar seus recursos e serviços. Cada veículo deve ter um número de chassi, modelo, ano, cor, valor, quilometragem, acessórios, versão do sistema e os dados do proprietário (nome, cpf/cnpj, endereço, e-mail, telefone, e demais dados pessoais). No sistema também é necessário o controle das vendas dos veículos, que são efetuadas por vendedores (que ganham comissão de 1% sobre o valor da venda). O sistema deve ser capaz de fazer o CRUD em tabelas do banco de addos, de listar os veículos de acordo com a quilometragem e a versão do sistema. Além disso, de calcular o salário de cada funcionário, considerando o salário-mínimo vigente como base e incluindo as devidas suas comissões do mês.
-Sua entrega deverá incluir:
-1. A modelagem do banco de dados.
-2. O sistema desenvolvido em REST com o framework Entity usando o SQL server, com tratamento de exceções persistidos em um arquivo de log.
-3. Um item de criatividade.
+## Description
+This project is a resource and service management system designed for a network of dealerships. The system manages vehicles, their owners, and the sales process, as well as calculating salespeople's salaries with commissions. The system supports full CRUD operations on tables in a SQL Server database and includes additional features like listing vehicles by mileage and system version, and calculating salaries with monthly sales commissions.
+
+## Features
+1. **Vehicle Management**:
+   - Each vehicle has the following attributes:
+     - **Chassis Number**
+     - **Model**
+     - **Year**
+     - **Color**
+     - **Value**
+     - **Mileage**
+     - **Accessories**
+     - **System Version**
+     - **Owner Data**:
+       - Name
+       - CPF/CNPJ
+       - Address
+       - Email
+       - Phone
+       - Other personal information
+
+2. **Sales Control**:
+   - The system manages vehicle sales by **salespeople**, who receive a **1% commission** on each sale.
+
+3. **Full CRUD**:
+   - The system supports **Create, Read, Update, and Delete (CRUD)** operations on all database tables, including vehicles, owners, and salespeople.
+
+4. **Vehicle Listing**:
+   - Vehicles can be listed by:
+     - **Mileage**
+     - **System Version**
+
+5. **Salary Calculation**:
+   - The system calculates each salesperson's salary, based on:
+     - **Current minimum wage**
+     - **Monthly sales commissions** (1% of sales)
+
+6. **Exception Handling**:
+   - The system includes error handling, with **logs stored** in a file for persistence of errors and exceptions.
+
+7. **Creative Feature**:
+   - [Add details of the creative or innovative feature included in the system.]
+
+## Requirements
+- **Technologies Used**:
+  - **.NET Core** with **Entity Framework** for REST API implementation.
+  - **SQL Server** as the relational database.
+  - **Serilog** for logging and exception handling.
